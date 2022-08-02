@@ -9,15 +9,20 @@ Dependency :
 
 Step 1: Download Java (JDK -1.8)
 
-    - Java Log in with your Oracale account, if not create an account to download)
+    - Java Log in with your Oracale account, if not create an account to download
 
     - Download JDK 11 (Choose the file based on your OS)
 
         - Link : https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
 
     - Install Java on your computer
-
-Next Step 2: Download Latest Maven (3.8.6)
+    
+    (OPTIONAL)Video links showing how to install Java
+    Mac users - https://www.youtube.com/watch?v=vCXfyCQHHbk
+    Windows Users - https://www.youtube.com/watch?v=DTZAz9rj0kU
+    
+   
+   Next Step 2: Download Latest Maven (3.8.6)
 
     Mac - https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
 
@@ -25,7 +30,10 @@ Next Step 2: Download Latest Maven (3.8.6)
 
     Mac - Copy the download Apache Maven folder and move it to Application Folder 
     Windows - Unzip the file > Move it to Application Folder 
-
+    
+    (OPTIONAL) Video links showing how to install Maven: 
+    Mac users - https://www.youtube.com/watch?v=j0OnSAP-KtU
+    Windows Users - https://www.youtube.com/watch?v=km3tLti4TCM
 
 Step 3:  Set up Path - (Mac users only) For windows user please read the readme file for Java and Maven to set the path
 
@@ -33,7 +41,7 @@ Step 3:  Set up Path - (Mac users only) For windows user please read the readme 
 
 - Open .bash_profile in vi editor - vi .bash_profile
 
-- Insert the following intou your .bash_profile : (Mac Users only)
+- Insert the following intou your .bash_profile : (Mac Users only insert the following for JAVA & MAVEN path)
  
         export M2_HOME=/Applications/apache-maven-3.8.6
     
@@ -58,7 +66,7 @@ Libraries used : (Information)
     TestNG V:- 6.11
     WebdriverManager  V:- 5.2.1
 
-Steps to clone execute the tests :
+*** Steps to clone execute the tests :
 
     - git clone https://github.com/rai239298/TheHudl.git
     
