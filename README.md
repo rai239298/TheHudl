@@ -9,17 +9,13 @@ Dependency :
 
 Step 1: Download Java (JDK -1.8)
 
-    Java Log in with your Oracale account, if not create an account to download)
+    - Java Log in with your Oracale account, if not create an account to download)
 
-    Mac - 
+    - Download JDK 11 (Choose the file based on your OS)
 
-    https://download.oracle.com/otn/java/jdk/8u333-b02/2dee051a5d0647d5be72a7c0abff270e/jdk-8u333-macosx-x64.dmg
+        - Link : https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
 
-    Windows - 
-
-    https://download.oracle.com/otn/java/jdk/8u333-b02/2dee051a5d0647d5be72a7c0abff270e/jdk-8u333-windows-x64.exe
-
-    Install Java on your computer
+    - Install Java on your computer
 
 Next Step 2: Download Latest Maven (3.8.6)
 
@@ -28,33 +24,35 @@ Next Step 2: Download Latest Maven (3.8.6)
     Windows- https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip
 
     Mac - Copy the download Apache Maven folder and move it to Application Folder 
-    Windown - Unzip the file > Move it to Application Folder 
+    Windows - Unzip the file > Move it to Application Folder 
 
 
-Step 3:  Set up Path - (Mac users only)
+Step 3:  Set up Path - (Mac users only) For windows user please read the readme file for Java and Maven to set the path
 
-Open Terminal 
+- Open Terminal 
 
-Open .bash_profile in vi editor - vi .bash_profile
+- Open .bash_profile in vi editor - vi .bash_profile
 
-Insert the following intou your .bash_profile : 
+- Insert the following intou your .bash_profile : (Mac Users only)
  
-    export M2_HOME=/Applications/apache-maven-3.8.6
-    export PATH=$PATH:$M2_HOME/bin
-    export JAVA_HOME=$(/usr/libexec/java_home)
-    export PATH=${JAVA_HOME}/BIN:$PATH
+        export M2_HOME=/Applications/apache-maven-3.8.6
+    
+        export PATH=$PATH:$M2_HOME/bin
+    
+        export JAVA_HOME=$(/usr/libexec/java_home)
+    
+        export PATH=${JAVA_HOME}/BIN:$PATH
 
-Now Save the file and exit
+- Now Save the file and exit
+- On new terminal type: source .bash_profile  (This comand will reload the file on the new terminal)
 
-How to check version on your terminal - 
+How to check version on your terminal - (Optional: To ensure Java and Maven are installed)
 
     Open Terminal - JAVA -version 
     Open Terminal - mvn -v
 
-Make sure you it shows your Java and Maven  
 
-
-Libraries used :
+Libraries used : (Information)
 
     Selenium WebDriver V:- 4.3.0
     TestNG V:- 6.11
@@ -62,6 +60,14 @@ Libraries used :
 
 Steps to clone execute the tests :
 
-    git clone https://github.com/rai239298/TheHudl.git
-    cd Hudl
-    mvn clean test
+    - git clone https://github.com/rai239298/TheHudl.git
+    
+    Before running*** - Open the Config file and insert the password 
+        - Path to the file: https://github.com/rai239298/TheHudl/blob/main/src/main/java/com/qa/huld/config/config.properties 
+        - Image of the file where you need to add the password - (https://www.screencast.com/t/tQ6J0eMgHbBI)    
+    
+    After setting the Password in the config file make sure to save it - Then CD into the Project from your terminal to run
+    - cd Hudl
+    - mvn clean test
+    
+    Video Showing test run - https://www.screencast.com/t/1sMv0KHTx
